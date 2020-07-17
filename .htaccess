@@ -1,0 +1,14 @@
+RewriteEngine On
+RewriteRule ^index$ index.php
+RewriteRule ^post/([0-9]+)$ post.php?post_id=$1
+RewriteRule ^category/([0-9]+)$ index.php?category_id=$1
+RewriteRule ^author/([0-9]+)$ index.php?author_id=$1
+RewriteRule ^tags/([a-zA-Z]+)$ index.php?tags=$1
+RewriteRule ^routing$ helper/routing.php
+RewriteRule ^admin/$ admin/dashboard.php
+RewriteRule ^admin/posts/add$ admin/posts.php?view=add-post
+RewriteRule ^admin/posts/all/([0-9]+)$ admin/posts.php?view=all-post&page_no=$1
+RewriteRule ^admin/posts/all/delete admin/admin-helper/delete-routing.php
+RewriteRule ^admin/posts/all/toggle admin/admin-helper/toggle-routing.php
+RewriteRule ^admin/posts$ admin/posts.php?view=add-post
+RewriteRule ^admin/posts/insert$ admin/admin-helper/admin-routing.php

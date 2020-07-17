@@ -1,0 +1,8 @@
+post_author_id rkha h
+
+
+SERVER_REMOTE ADDR karke hai $_SERVER ka associate array joh server related bahut sara information leke aata hai
+
+$_SERVER['SERVER_ADDR']
+$_SERVER['HTTP_USER_AGENT']
+$_SERVER['REMOTE_ADDR']
